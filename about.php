@@ -13,11 +13,17 @@
 </head>
 <body>
 
+<nav>
+    <?php require_once "blocks/nav.php"; ?>
+</nav>
+
+<header>
 <h1>About us</h1>
 <p>We are Seth, Miya, Alex, and Daniëlle; 4 students from a university called Hogeschool Rotterdam who were tasked with
     designing something that could make shopping more pleasant for someone with a visual impairment. After much
     brainstorming, creating prototypes, and interviewing the target group, we arrived at the final product:
     ‘VisualEyes’.</p>
+</header>
 
 <section id="goals">
 <h2>Goals</h2>
@@ -54,10 +60,6 @@
     available than what we can create in such a short time. But we are learning from this. Because we are doing this
     now, we can make something even better in the future.</p>
 </section>
-
-<nav>
-    <?php require_once "blocks/nav.php"; ?>
-</nav>
 
 </body>
 </html>
