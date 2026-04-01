@@ -1,0 +1,43 @@
+
+* {
+    margin: 0;
+}
+
+
+nav {
+    padding-top: 1vh;
+    padding-bottom: 1.5vh;
+    display: flex;
+    gap: 45vw;
+    background-color: #e0e1dd;
+}
+
+.navText {
+    padding-top: 3vh;
+    justify-self: flex-end;
+    display: flex;
+    gap: 3vw;
+}
+
+nav a {
+    font-family: Uwais;
+    text-decoration: none;
+    color: #778da9;
+    font-size: 3em;
+}
+
+nav a:hover {
+    text-decoration: underline;
+    text-decoration-color: #415a77;
+}
+
+nav img {
+    padding-top: 0.7vh;
+    padding-left: 1.2vw;
+    width: 25vw;
+}
+
+@font-face {
+    font-family: Uwais;
+    src: url("https://file.garden/aCHSjVU4PCQNDvKI/UwaisSans.ttf");
+}

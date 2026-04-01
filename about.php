@@ -2,7 +2,7 @@
 
 ?>
 
-!<!doctype html>
+<!doctype html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -12,6 +12,10 @@
     <title>Document</title>
 </head>
 <body>
+
+<nav>
+    <?php require_once "blocks/nav.php"; ?>
+</nav>
 
 </body>
 </html>
