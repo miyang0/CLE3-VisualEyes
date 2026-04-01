@@ -12,8 +12,13 @@
     <title>Document</title>
 </head>
 <body>
-<h1>Homepage</h1>
-<p>Welcome to our page! We created the VisualEyes app to make shopping more pleasant for people with a visual
+
+<header>
+    <h1>Home</h1>
+    <p>Welcome to our page!</p>
+</header>
+
+<p>We created the VisualEyes app to make shopping more pleasant for people with a visual
     impairment, particularly when searching for clothing. With the VisualEyes app, you can get information about a
     product by pointing your camera at it and clicking on start. It will then tell you the color of the product and the
     type of pattern on it, if there is one. Furthermore, you can also use the app to search for a specific color. You
