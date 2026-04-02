@@ -34,6 +34,7 @@
 <p>start the scanning process again but this time you can scan an area to look for something specific.</p>
 
 <h2>Additional settings</h2>
+<p>In the additional settings you can disable </p>
 
 
 </body>
