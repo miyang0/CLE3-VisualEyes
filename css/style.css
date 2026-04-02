@@ -31,13 +31,32 @@ nav a:hover {
     text-decoration-color: #415a77;
 }
 
+nav a:visited {
+    color: #415a77;
+}
+
 nav img {
     padding-top: 0.7vh;
     padding-left: 1.2vw;
     width: 25vw;
 }
 
+header p {
+    font-family: Alphazet;
+    font-size: 2rem;
+}
+
 @font-face {
     font-family: Uwais;
     src: url("https://file.garden/aCHSjVU4PCQNDvKI/UwaisSans.ttf");
+}
+
+@font-face {
+    font-family: Nicholas;
+    src: url("https://file.garden/aCHSjVU4PCQNDvKI/Nicholas.ttf");
+}
+
+@font-face {
+    font-family: Alphazet;
+    src: url("https://file.garden/aCHSjVU4PCQNDvKI/Alphazet-Light.ttf");
 }
