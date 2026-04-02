@@ -1,23 +1,40 @@
 :root {
-    --black: black;
-    --white: white;
-    --burgundy: #4A051C;
-    --dusk-blue: #415A77;
-    --light-blue: #778DA9;
-    --background-color: #E0E1DD;
+    --text-color: black;
+    --primary-bg-color: white;
+    --extra-color1: #4A051C;
+    --nav-text-shadow: #415A77;
+    --nav-text: #778DA9;
+    --nav-bg: #E0E1DD;
+}
+
+.darkmode {
+    --text-color: white;
+    --primary-bg-color: black;
+    --extra-color1: #4A051C;
+    --nav-text-shadow: #415A77;
+    --nav-text: #778DA9;
+    --nav-bg: #3B3B3B;
 }
 
 * {
     margin: 0;
+    background-color: var(--primary-bg-color);
 }
 
+div, img {
+    background-color: var(--nav-bg);
+}
+
+header, section {
+    color: var(--text-color);
+}
 
 nav {
     padding-top: 1vh;
     padding-bottom: 1.5vh;
     display: flex;
     gap: 45vw;
-    background-color: #e0e1dd;
+    background-color: var(--nav-bg);
 }
 
 .navText {
@@ -30,17 +47,18 @@ nav {
 nav a {
     font-family: Uwais;
     text-decoration: none;
-    color: #778da9;
+    color: var(--nav-text);
     font-size: 3em;
+    background-color: var(--nav-bg);
 }
 
 nav a:hover {
     text-decoration: underline;
-    text-decoration-color: #415a77;
+    text-decoration-color: var(--nav-text-shadow);
 }
 
 nav a:visited {
-    color: #415a77;
+    color: var(--nav-text-shadow);
 }
 
 nav img {
