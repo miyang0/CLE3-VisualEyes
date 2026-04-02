@@ -1,3 +1,11 @@
+:root {
+    --black: black;
+    --white: white;
+    --burgundy: #4A051C;
+    --dusk-blue: #415A77;
+    --light-blue: #778DA9;
+    --background-color: #E0E1DD;
+}
 
 * {
     margin: 0;

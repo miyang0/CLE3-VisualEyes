@@ -19,7 +19,7 @@
 </nav>
 
 <header>
-    <h1></h1>
+    <h1>Welcome to our page!</h1>
     <p>Simple and accessible - we created the VisualEyes app to make shopping more accessible for people with visual
         impairments,
         especially when looking for clothing. With the color detector app, you can get information about a product by
