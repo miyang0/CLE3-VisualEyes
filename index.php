@@ -19,16 +19,21 @@
 </nav>
 
 <header>
-    <h1>Welcome to our page!</h1>
-    <p>Simple and accessible - we created the VisualEyes app to make shopping more accessible for people with visual
-        impairments,
-        especially when looking for clothing. With the color detector app, you can get information about a product by
-        pointing your
-        camera at it and tapping “Start.” It will describe the colours and patterns seen on the product.
-        Furthermore, you can use the app to search for a specific colour: select the colour or colours you want to
-        search for and then scan your surroundings.
-        You can also mark colours as favourites to find them more quickly.
-    </p>
+
+    <img src="https://file.garden/aCHSjVU4PCQNDvKI/aJqDyI2o-ezgif.com-crop.webp" alt="Eye">
+    <div>
+        <h1>Welcome</h1>
+        <p>Simple and accessible - we created the VisualEyes app to make shopping more accessible for people with visual
+            impairments,
+            especially when looking for clothing. With the color detector app, you can get information about a product
+            by
+            pointing your
+            camera at it and tapping “Start.” It will describe the colours and patterns seen on the product.
+            Furthermore, you can use the app to search for a specific colour: select the colour or colours you want to
+            search for and then scan your surroundings.
+            You can also mark colours as favourites to find them more quickly.
+        </p>
+    </div>
 </header>
 
 </body>

@@ -67,9 +67,36 @@ nav img {
     width: 25vw;
 }
 
+header {
+    background-color: #b8bbbf;
+    height: 50vh;
+    display: flex;
+    gap: 10vw;
+}
+
 header p {
     font-family: Alphazet;
     font-size: 2rem;
+    color: #2a394c;
+    font-weight: bold;
+    width: 60vw;
+}
+
+h1 {
+    font-family: Mickle;
+    color: #2a394c;
+    font-size: 5rem;
+}
+
+header img {
+    width: 20vw;
+    height: fit-content;
+    justify-self: flex-start;
+    padding: 5vw;
+}
+
+header div {
+    justify-self: flex-end;
 }
 
 @font-face {
@@ -85,4 +112,9 @@ header p {
 @font-face {
     font-family: Alphazet;
     src: url("https://file.garden/aCHSjVU4PCQNDvKI/Alphazet-Light.ttf");
+}
+
+@font-face {
+    font-family: Mickle;
+    src: url("https://file.garden/aCHSjVU4PCQNDvKI/Mickle.ttf");
 }
