@@ -12,5 +12,6 @@
     <a href="index.php">Home</a>
     <a href="about.php">About</a>
     <a href="manual.php">Manual</a>
+    <button id="theme-switch" type="button">
 </div>
 
