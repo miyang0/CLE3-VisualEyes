@@ -4,7 +4,7 @@
 
 <link rel="stylesheet" href="css/style.css">
 
-<div>
+<div id="logo">
     <a href="#"><img src="https://file.garden/aCHSjVU4PCQNDvKI/okZQ3hWb-ezgif.com-crop.webp" alt="VisualEyes logo"></a>
 </div>
 

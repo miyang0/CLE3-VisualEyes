@@ -21,7 +21,7 @@
     background-color: var(--primary-bg-color);
 }
 
-div, img {
+.logo, img {
     background-color: var(--nav-bg);
 }
 
