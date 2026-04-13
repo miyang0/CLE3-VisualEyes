@@ -5,8 +5,8 @@ class Components
     public static function errorMessage(?array $errors): void
     {
         if (!empty($errors)): ?>
-            <section class="m-4 rounded w-fit flex bg-error mx-auto">
-                <ul class="p-4 px-8 list-disc">
+            <section class="bg-error">
+                <ul class="list">
                     <?php foreach ($errors as $errorMessage): ?>
                         <li><?= htmlspecialchars($errorMessage); ?></li>
                     <?php endforeach; ?>
@@ -18,8 +18,8 @@ class Components
     public static function successMessage(?array $success): void
     {
         if (!empty($success)): ?>
-            <section class="m-4 rounded w-fit flex bg-success mx-auto">
-                <ul class="p-4 px-8 list-disc">
+            <section class="bg-error">
+                <ul class="list">
                     <?php foreach ($success as $successMessage): ?>
                         <li><?= htmlspecialchars($successMessage); ?></li>
                     <?php endforeach; ?>

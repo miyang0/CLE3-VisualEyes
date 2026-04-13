@@ -69,44 +69,39 @@ if (isset($_POST['submit'])) {
     <!--    begin van section voor formulier-->
     <!--Uitzoeken wat ik moet doen met de succes en error messages en of dit nodig is-->
 
-    <?php \Utils\Components::successMessage($success);
-    \Utils\Components::errorMessage($errors); ?>
+    <?php require_once 'Utils.php'; ?>
 
-    <section class="md:max-w-[1000px] md:m-auto">
-        <div class="font-bold text-xl">Contact Form</div>
+    <section class="contact-container">
+        <div class="form-title">Contact Form</div>
 
         <form method="post">
-            <div class="md:flex md:justify-between md:grid md:grid-cols-3 gap-6">
-                <div>
+            <div class="form-row">
+                <div class="form-group">
                     <label for="name">Name</label>
-                    <input type="text" id="name" name="name" required class="bg-white rounded-md">
+                    <input type="text" id="name" name="name" required>
                 </div>
 
-                <div>
+                <div class="form-group">
                     <label for="email">Email</label>
-                    <input type="email" id="email" name="email" required class="bg-white rounded-md">
+                    <input type="email" id="email" name="email" required>
                 </div>
 
-                <div>
+                <div class="form-group">
                     <label for="number">Phone number</label>
-                    <input type="tel" name="number" id="number" required class="bg-white rounded-md">
+                    <input type="tel" name="number" id="number" required>
                 </div>
             </div>
 
-            <div class="flex flex-col">
+            <div class="form-group full-width">
                 <label for="comment">Your message</label>
-                <textarea class="bg-white rounded-md" name="comment" id="comment" required cols="30"
-                          rows="10"></textarea>
+                <textarea name="comment" id="comment" required></textarea>
             </div>
 
-            <!--verzenden knop-->
-            <!--            Is hier nog een div nodig?-->
-            <div class="grid col-span-1 col-start-3">
-                <button class="cta-button font-normal bg-white rounded-md flex justify-center p-1"
-                        type="submit" name="submit">Send
+            <div class="form-actions">
+                <button class="cta-button" type="submit" name="submit">
+                    Send
                 </button>
             </div>
-
         </form>
     </section>
 </main>
