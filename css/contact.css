@@ -32,8 +32,7 @@ label {
     font-weight: 500;
 }
 
-input,
-textarea {
+input, textarea {
     padding: 10px;
     border-radius: 6px;
     border: 1px solid #ccc;
@@ -81,4 +80,9 @@ textarea {
     margin: 20px auto;
     border-radius: 6px;
     width: fit-content;
+}
+
+.list {
+    padding: 10px 20px;
+    list-style: disc;
 }

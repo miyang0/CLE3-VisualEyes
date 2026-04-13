@@ -8,7 +8,7 @@ class Components
             <section class="bg-error">
                 <ul class="list">
                     <?php foreach ($errors as $errorMessage): ?>
-                        <li><?= htmlspecialchars($errorMessage); ?></li>
+                        <li><?= $errorMessage; ?></li>
                     <?php endforeach; ?>
                 </ul>
             </section>
@@ -18,10 +18,10 @@ class Components
     public static function successMessage(?array $success): void
     {
         if (!empty($success)): ?>
-            <section class="bg-error">
+            <section class="bg-success">
                 <ul class="list">
                     <?php foreach ($success as $successMessage): ?>
-                        <li><?= htmlspecialchars($successMessage); ?></li>
+                        <li><?= $successMessage; ?></li>
                     <?php endforeach; ?>
                 </ul>
             </section>
