@@ -1,6 +1,6 @@
 <?php
 
-class Components
+class Errorhandler
 {
     public static function errorMessage(?array $errors): void
     {

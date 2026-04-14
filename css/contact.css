@@ -36,7 +36,7 @@ input, textarea {
     padding: 0.6rem;
     border-radius: 0.4rem;
     border: 0.06rem solid #ccc;
-    background-color: #fff;
+    background-color: #FFFFFF;
     font-size: 0.9rem;
 }
 
@@ -55,7 +55,7 @@ textarea {
     padding: 0.5rem 1rem;
     border-radius: 0.4rem;
     border: 0.06rem solid #ccc;
-    background-color: #fff;
+    background-color: #FFFFFF;
     cursor: pointer;
     transition: 0.2s;
 }

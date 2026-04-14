@@ -1,6 +1,6 @@
 <?php
 
-require_once 'Components.php';
+require_once 'Errorhandler.php';
 require_once 'Mailer.php';
 
 $success = [];
@@ -57,8 +57,8 @@ if (isset($_POST['submit'])) {
             as soon as possible after u fill in this form.</p>
     </header>
 
-    <?php Components::successMessage($success); ?>
-    <?php Components::errorMessage($errors); ?>
+    <?php Errorhandler::successMessage($success); ?>
+    <?php Errorhandler::errorMessage($errors); ?>
 
     <section class="contact-container">
         <div class="form-title">Contact Form</div>
