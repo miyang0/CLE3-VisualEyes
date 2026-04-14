@@ -23,7 +23,7 @@ class Mailer
         $this->mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
         $this->mail->Port = 587;
 
-        $this->mail->setFrom('danielleruwaard8@gmail.com', 'Contact Form');
+        $this->mail->setFrom('danielleruwaard8@gmail.com', 'VisualEyes');
     }
 
     public function send(string $fromEmail, string $messageContent): bool
