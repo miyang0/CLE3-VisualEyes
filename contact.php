@@ -87,7 +87,7 @@ if (isset($_POST['submit'])) {
             </div>
 
             <div class="form-actions">
-                <button class="cta-button" type="submit" name="submit">
+                <button class="submit-button" type="submit" name="submit">
                     Send
                 </button>
             </div>

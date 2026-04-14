@@ -1,88 +1,83 @@
 .contact-container {
-    max-width: 1000px;
-    margin: 40px auto;
-    padding: 20px;
+    max-width: 60rem;
+    margin: 2.5rem auto;
+    padding: 1.25rem;
 }
 
 .form-title {
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: bold;
-    margin-bottom: 20px;
+    margin-bottom: 1.25rem;
 }
 
 .form-row {
     display: flex;
-    gap: 20px;
+    gap: 1.25rem;
     flex-wrap: wrap;
 }
 
 .form-group {
-    flex: 1;
+    flex: 1 1 15rem;
     display: flex;
     flex-direction: column;
 }
 
 .full-width {
     width: 100%;
-    margin-top: 20px;
+    margin-top: 1.25rem;
 }
 
 label {
-    margin-bottom: 5px;
+    margin-bottom: 0.3rem;
     font-weight: 500;
 }
 
 input, textarea {
-    padding: 10px;
-    border-radius: 6px;
-    border: 1px solid #ccc;
+    padding: 0.6rem;
+    border-radius: 0.4rem;
+    border: 0.06rem solid #ccc;
     background-color: #fff;
-    font-size: 14px;
+    font-size: 0.9rem;
 }
 
 textarea {
-    min-height: 150px;
+    min-height: 10rem;
     resize: vertical;
 }
 
 .form-actions {
     display: flex;
     justify-content: flex-end;
-    margin-top: 20px;
+    margin-top: 1.25rem;
 }
 
-.cta-button {
-    padding: 8px 16px;
-    border-radius: 6px;
-    border: 1px solid #ccc;
+.submit-button {
+    padding: 0.5rem 1rem;
+    border-radius: 0.4rem;
+    border: 0.06rem solid #ccc;
     background-color: #fff;
     cursor: pointer;
     transition: 0.2s;
 }
 
-.cta-button:hover {
+.submit-button:hover {
     background-color: #f0f0f0;
 }
 
 .bg-success {
     background-color: #d4edda;
     color: #155724;
-    padding: 15px;
-    margin: 20px auto;
-    border-radius: 6px;
+    padding: 1rem;
+    margin: 1.25rem auto;
+    border-radius: 0.4rem;
     width: fit-content;
 }
 
 .bg-error {
     background-color: #f8d7da;
     color: #721c24;
-    padding: 15px;
-    margin: 20px auto;
-    border-radius: 6px;
+    padding: 1rem;
+    margin: 1.25rem auto;
+    border-radius: 0.4rem;
     width: fit-content;
-}
-
-.list {
-    padding: 10px 20px;
-    list-style: disc;
 }
