@@ -1,6 +1,6 @@
 <?php
 
-require_once 'Utils.php';
+require_once 'Components.php';
 require_once 'Mailer.php';
 
 $success = [];
