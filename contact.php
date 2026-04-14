@@ -53,8 +53,8 @@ if (isset($_POST['submit'])) {
 <main>
     <header>
         <h1>Contact</h1>
-        <p>Heeft u een vraag, is er iets mis gegaan of heeft u ergens hulp bij nodig? Wij zullen u zo spoedig mogelijk
-            helpen nadat u dit formulier heeft ingevuld.</p>
+        <p>Do u have a question, did something go wrong or do u need help with something? We will do our best to help u
+            as soon as possible after u fill in this form.</p>
     </header>
 
     <?php Components::successMessage($success); ?>
