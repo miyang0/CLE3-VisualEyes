@@ -44,12 +44,12 @@ if (isset($_POST['submit'])) {
     <link rel="stylesheet" href="css/contact.css">
 </head>
 <body>
+
+
+<nav>
+    <?php require_once "blocks/nav.php"; ?>
+</nav>
 <main>
-
-    <nav>
-        <?php require_once "blocks/nav.php"; ?>
-    </nav>
-
     <header>
         <h1>Contact</h1>
     </header>
@@ -91,6 +91,11 @@ if (isset($_POST['submit'])) {
         </form>
     </section>
 </main>
+
+<footer>
+    <?php require_once "blocks/footer.php"; ?>
+</footer>
+
 </body>
 </html>
 
