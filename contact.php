@@ -1,7 +1,7 @@
 <?php
 
 require_once 'Utils.php';
-require_once 'mailer.php';
+require_once 'Mailer.php';
 
 $success = [];
 $errors = [];
@@ -28,7 +28,8 @@ if (isset($_POST['submit'])) {
     }
 
     if (empty($errors)) {
-        if (sendMail($email, $comment)) {
+        $mailer = new Mailer();
+        if ($mailer->send($email, $comment)) {
             $success = ['Email sent'];
         }
     }
@@ -52,6 +53,8 @@ if (isset($_POST['submit'])) {
 
     <header>
         <h1>Contact</h1>
+        <p>Heeft u een vraag, is er iets mis gegaan of heeft u ergens hulp bij nodig? Wij zullen u zo spoedig mogelijk
+            helpen nadat u dit formulier heeft ingevuld.</p>
     </header>
 
     <?php Components::successMessage($success); ?>
