@@ -1,32 +1,28 @@
 :root {
-    --text-color: black;
+    --darkmode-color: black;
+    --primary-color: #415A77;
+    --primary-color-2: #778DA9;
+    --secondary-color: #4A051C;
     --primary-bg-color: white;
-    --extra-color1: #4A051C;
-    --nav-text-shadow: #415A77;
-    --nav-text: #778DA9;
-    --nav-bg: #E0E1DD;
+    --secondary-bg-color: #E0E1DD;
 }
 
 .darkmode {
-    --text-color: white;
-    --primary-bg-color: black;
-    --extra-color1: #4A051C;
-    --nav-text-shadow: #415A77;
-    --nav-text: #778DA9;
-    --nav-bg: #3B3B3B;
+    --darkmode-color: white;
+    --primary-color: #415A77;
+    --primary-color-2: #778DA9;
+    --secondary-color: #4A051C;
+    --primary-bg-color: #3B3B3B;
+    --secondary-bg-color: #E0E1DD;
 }
 
 * {
     margin: 0;
-    background-color: var(--primary-bg-color);
 }
 
-.logo, img {
-    background-color: var(--nav-bg);
-}
 
 header, section {
-    color: var(--text-color);
+    color: var(--darkmode-color);
 }
 
 nav {
@@ -34,7 +30,7 @@ nav {
     padding-bottom: 1.5vh;
     display: flex;
     gap: 45vw;
-    background-color: var(--nav-bg);
+    background-color: var(--secondary-bg-color);
 }
 
 .navText {
@@ -47,18 +43,17 @@ nav {
 nav a {
     font-family: Uwais;
     text-decoration: none;
-    color: var(--nav-text);
+    color: var(--darkmode-color);
     font-size: 3em;
-    background-color: var(--nav-bg);
 }
 
 nav a:hover {
     text-decoration: underline;
-    text-decoration-color: var(--nav-text-shadow);
+    text-decoration-color: var(--primary-color);
 }
 
 nav a:visited {
-    color: var(--nav-text-shadow);
+    color: var(--primary-color);
 }
 
 nav img {
@@ -67,9 +62,119 @@ nav img {
     width: 25vw;
 }
 
-header p {
+header {
+    background-color: var(--primary-color-2);
+    width: 100vw;
+    height: 54vh;
+    display: flex;
+    gap: 10vw;
+}
+
+.description {
+    background-color: #575757;
+
+}
+
+.description p {
+    font-family: Alphazet;
+    font-size: 2.5rem;
+    color: #ffffff;
+    font-weight: bold;
+    width: 80vw;
+    text-align: center;
+    justify-self: center;
+    padding: 50px;
+}
+
+h1, h2 {
+    font-family: Uwais;
+    color: #000000;
+    font-size: 8rem;
+    letter-spacing: 8px;
+    justify-self: center;
+    align-self: center;
+    padding-left: 130px;
+}
+
+header img, .smartCamera img {
+    width: 26vw;
+    height: fit-content;
+    justify-self: flex-start;
+    padding: 3vw;
+
+}
+
+.imgDiv {
+    padding-left: 180px;
+}
+
+header div {
+    justify-self: flex-end;
+}
+
+.smartCamera {
+    background-color: var(--secondary-bg-color);
+    display: flex;
+    gap: 18vw;
+}
+
+
+h2 {
+    padding-left: 200px;
+    padding-top: 100px;
+}
+
+.textSplit {
+    padding-left: 100px;
+}
+
+.smartCamera p {
     font-family: Alphazet;
     font-size: 2rem;
+    color: #000000;
+    font-weight: bold;
+    padding-left: 280px;
+}
+
+footer {
+    background-color: #778DA9;
+    height: 30vh;
+    color: #404040;
+}
+
+footer img {
+    width: 8vw;
+    height: auto;
+    padding: 10px;
+}
+
+.footerText {
+    padding: 12px;
+    display: flex;
+    flex-flow: nowrap column;
+    gap: 20px;
+}
+
+footer a {
+    font-family: Uwais;
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: #404040;
+}
+
+.imgTextTogether {
+    display: flex;
+    padding-left: 80px;
+    padding-top: 30px;
+}
+
+.socials {
+    display: flex;
+    flex-flow: nowrap column;
+    gap: 20px;
+    justify-self: flex-end;
+    padding-left: 1000px;
+    padding-top: 7px;
 }
 
 @font-face {
@@ -85,4 +190,9 @@ header p {
 @font-face {
     font-family: Alphazet;
     src: url("https://file.garden/aCHSjVU4PCQNDvKI/Alphazet-Light.ttf");
+}
+
+@font-face {
+    font-family: Mickle;
+    src: url("https://file.garden/aCHSjVU4PCQNDvKI/Mickle.ttf");
 }
