@@ -8,6 +8,7 @@
     <img src="https://file.garden/aCHSjVU4PCQNDvKI/Placeholder_view_vector.svg.png" alt="logo">
 
     <div class="footerText">
+        <a href="contact.php">Contact</a>
         <a href="#">Terms of Service</a>
         <a href="#">Cookies & Privacy</a>
         <a href="#">Frequently asked</a>
