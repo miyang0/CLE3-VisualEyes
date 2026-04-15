@@ -25,10 +25,10 @@ header, section {
 }
 
 nav {
-    padding-top: 1vh;
-    padding-bottom: 1.5vh;
+    padding: 1vh 1vh 1.5vh;
     display: flex;
-    gap: 45vw;
+    justify-content: space-between;
+    align-items: center;
     background-color: var(--secondary-bg-color);
 }
 
@@ -37,6 +37,7 @@ nav {
     justify-self: flex-end;
     display: flex;
     gap: 3vw;
+    margin: 0;
 }
 
 nav a {
@@ -59,6 +60,10 @@ nav img {
     padding-top: 0.7vh;
     padding-left: 1.2vw;
     width: 25vw;
+}
+
+.theme-switch image {
+    padding: 0;
 }
 
 header {
