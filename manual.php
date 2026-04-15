@@ -43,5 +43,9 @@
         clicking the button for speaking.</p>
 </section>
 
+<footer>
+    <?php require_once "blocks/footer.php"; ?>
+</footer>
+
 </body>
 </html>
