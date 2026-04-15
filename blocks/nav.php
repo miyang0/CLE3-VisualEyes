@@ -14,7 +14,7 @@
     <a href="about.php">About</a>
     <a href="manual.php">Manual</a>
     <button id="theme-switch" type="button" aria-label="Change themes">
-        <img src="./images/darkmodeBlue.png" alt="darkmode button" style="width:2em; height:2em;">
+        <img src="./images/darkmodeBlue.png" alt="darkmode button" style="width:2em; height:2em; padding: 0 !important">
         <img src="./images/lightmodeBlue.png" alt="darkmode button" style="width:2em; height:2em;">
     </button>
 </div>

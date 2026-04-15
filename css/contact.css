@@ -1,3 +1,14 @@
+.contactDescription {
+    font-family: Alphazet;
+    font-size: 2.2rem;
+    color: #ffffff;
+    font-weight: bold;
+    width: 80vw;
+    text-align: center;
+    justify-self: center;
+    padding: 50px 140px 50px 50px;
+}
+
 .contact-container {
     max-width: 60rem;
     margin: 2.5rem auto;
@@ -80,4 +91,9 @@ textarea {
     margin: 1.25rem auto;
     border-radius: 0.4rem;
     width: fit-content;
+}
+
+@font-face {
+    font-family: Alphazet;
+    src: url("https://file.garden/aCHSjVU4PCQNDvKI/Alphazet-Light.ttf");
 }
