@@ -26,7 +26,7 @@ class Mailer
         $this->mail->setFrom('danielleruwaard8@gmail.com', 'VisualEyes');
     }
 
-    public function send(string $fromEmail, string $messageContent): bool
+    public function send(string $fromEmail, string $emailBody): bool
     {
         try {
             $this->mail->addAddress('danielleruwaard8@gmail.com');
@@ -34,7 +34,7 @@ class Mailer
 
             $this->mail->isHTML(true);
             $this->mail->Subject = 'Contact Form';
-            $this->mail->Body = "<p>$messageContent</p>";
+            $this->mail->Body = "<p>$emailBody</p>";
 
             return $this->mail->send();
 
