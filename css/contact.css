@@ -9,10 +9,19 @@
     padding: 50px 140px 50px 50px;
 }
 
+header {
+    background-color: #778DA9;
+    /*    primary color 2*/
+    color: black;
+    /*    darkmode color, primary text color*/
+}
+
 .contact-container {
     max-width: 60rem;
     margin: 2.5rem auto;
     padding: 1.25rem;
+    background-color: #575757;
+    color: #FFFFFF;
 }
 
 .form-title {
@@ -47,13 +56,33 @@ input, textarea {
     padding: 0.6rem;
     border-radius: 0.4rem;
     border: 0.06rem solid #ccc;
-    background-color: #FFFFFF;
+    background-color: #707070;
     font-size: 0.9rem;
 }
 
 textarea {
     min-height: 10rem;
     resize: vertical;
+}
+
+input::placeholder {
+    color: #ccc;
+}
+
+input:focus, textarea:focus {
+    background-color: white;
+    color: black;
+}
+
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 1000px white inset;
+    -webkit-text-fill-color: black;
+}
+
+input:valid,
+textarea:valid {
+    background-color: white;
+    color: black;
 }
 
 .form-actions {
@@ -66,13 +95,15 @@ textarea {
     padding: 0.5rem 1rem;
     border-radius: 0.4rem;
     border: 0.06rem solid #ccc;
-    background-color: #FFFFFF;
+    background-color: #707070;
+    color: #FFFFFF;
     cursor: pointer;
     transition: 0.2s;
 }
 
-.submit-button:hover {
+.submit-button:hover, input:hover {
     background-color: #f0f0f0;
+    color: black;
 }
 
 .bg-success {
