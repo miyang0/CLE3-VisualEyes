@@ -10,7 +10,7 @@ if (isset($_POST['submit'])) {
     $name = $_POST['name'];
     $email = $_POST['email'];
     $number = $_POST['number'];
-    $comment = $_POST['comment'];
+    $message = $_POST['message'];
 
     if ($name === '') {
         $errors[] = 'U still need to enter your name';
@@ -23,13 +23,22 @@ if (isset($_POST['submit'])) {
     } elseif (strlen($number) > 20) {
         $errors[] = 'The phone number is too long';
     }
-    if ($comment === '') {
+    if ($message === '') {
         $errors[] = 'U did not enter your message';
     }
 
     if (empty($errors)) {
         $mailer = new Mailer();
-        if ($mailer->send($email, $comment)) {
+        $emailBody = "
+<p><strong>Name:</strong> $name</p>
+<p><strong>Email:</strong> $email</p>
+<p><strong>Phone number:</strong> $number</p>
+<hr>
+<p><strong>Message:</strong></p>
+<p>$message</p>
+";
+
+        if ($mailer->send($email, $emailBody)) {
             $success = ['Email sent'];
         }
     }
@@ -83,7 +92,7 @@ if (isset($_POST['submit'])) {
 
             <div class="form-group full-width">
                 <label>Your message</label>
-                <textarea name="comment" required></textarea>
+                <textarea name="message" required></textarea>
             </div>
 
             <div class="form-actions">
