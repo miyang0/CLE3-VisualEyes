@@ -17,11 +17,20 @@ if (isset($_POST['submit'])) {
     }
     if ($email === '') {
         $errors[] = 'U still need to enter your e-mailadres';
+    } elseif (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+        $errors[] = 'Please enter a valid email address';
     }
     if ($number === '') {
         $errors[] = 'U still need to enter your phone number';
-    } elseif (strlen($number) > 20) {
-        $errors[] = 'The phone number is too long';
+    } else {
+
+        $cleanNumber = str_replace(' ', '', $number);
+
+        if (!ctype_digit($cleanNumber)) {
+            $errors[] = 'Phone number may only contain numbers';
+        } elseif (strlen($cleanNumber) < 8 || strlen($cleanNumber) > 15) {
+            $errors[] = 'Phone number must be between 8 and 15 digits';
+        }
     }
     if ($message === '') {
         $errors[] = 'U did not enter your message';
@@ -62,7 +71,8 @@ if (isset($_POST['submit'])) {
 <main>
     <header>
         <h1>Contact</h1>
-        <p>Do u have a question, did something go wrong or do u need help with something? We will do our best to help u
+        <p class="contactDescription">Do u have a question, did something go wrong or do u need help with something? We
+            will do our best to help u
             as soon as possible after u fill in this form.</p>
     </header>
 
@@ -86,7 +96,7 @@ if (isset($_POST['submit'])) {
 
                 <div class="form-group">
                     <label>Phone number</label>
-                    <input type="tel" name="number" required>
+                    <input type="tel" name="number" placeholder="06 12345678" required>
                 </div>
             </div>
 
