@@ -2,10 +2,13 @@
 
 ?>
 
-<link rel="stylesheet" href="css/style.css">
+<head>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/2dba62d6df.js" crossorigin="anonymous"></script>
+</head>
 
 <div class="imgTextTogether">
-    <img src="https://file.garden/aCHSjVU4PCQNDvKI/Placeholder_view_vector.svg.png" alt="logo">
+    <img src="https://file.garden/aCHSjVU4PCQNDvKI/aJqDyI2o.webp" alt="VisualEyes logo">
 
     <div class="footerText">
         <a href="contact.php">Contact</a>
@@ -15,10 +18,14 @@
     </div>
 
     <div class="socials">
-        <a href="social1">social1</a>
-        <a href="social2">social2</a>
-        <a href="social3">social3</a>
-        <a href="social4">social4</a>
+        <div>
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+        </div>
+        <div>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+        </div>
     </div>
 
 </div>

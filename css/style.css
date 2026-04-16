@@ -20,6 +20,10 @@
     margin: 0;
 }
 
+body {
+    overflow-x: hidden;
+}
+
 header, section {
     color: var(--darkmode-color);
 }
@@ -79,7 +83,7 @@ header {
 
 }
 
-.description p, .aboutDescription, .goalsText, .reasonsText {
+.description p, .aboutDescription, .goalsText, .reasonsText, .download p {
     font-family: Alphazet;
     font-size: 2.2rem;
     color: #ffffff;
@@ -123,8 +127,37 @@ h1, h2, h3 {
     color: white;
 }
 
-.reasonsH3 {
+.reasonsH3, .downloadH2 {
     padding-left: 0;
+}
+
+.downloadH2 {
+    font-size: 6rem;
+    padding-bottom: 3vh;
+}
+
+.download p {
+    color: black;
+}
+
+.download {
+    padding-bottom: 10vh;
+}
+
+.buttonDownload {
+    border: black 1.6px solid;
+    font-family: Alphazet;
+    font-size: 2.2rem;
+    justify-self: center;
+}
+
+.buttonDownload a {
+    text-decoration: none;
+    color: black;
+}
+
+.download div {
+    justify-self: center;
 }
 
 header img, .smartCamera img {
@@ -132,11 +165,17 @@ header img, .smartCamera img {
     height: fit-content;
     justify-self: flex-start;
     padding: 3vw;
+    object-fit: contain;
 
+}
+
+header img {
+    padding-top: 0;
 }
 
 .imgDiv {
     padding-left: 180px;
+    padding-top: 0;
 }
 
 header div {
@@ -147,6 +186,7 @@ header div {
     background-color: var(--secondary-bg-color);
     display: flex;
     gap: 18vw;
+    padding-bottom: 5vh;
 }
 
 
@@ -202,6 +242,11 @@ footer a {
 
 footer a:hover {
     text-decoration: solid underline #404040;
+}
+
+i {
+    font-size: 2rem;
+    padding: 7px;
 }
 
 .imgTextTogether {

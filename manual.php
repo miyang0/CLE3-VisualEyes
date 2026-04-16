@@ -9,7 +9,7 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>VisualEyes</title>
 </head>
 <body>
 
@@ -18,29 +18,17 @@
 </nav>
 
 <header>
-    <h1>VisualEyes manual</h1>
-    <p>For the app</p>
+    <h1>Manual</h1>
 </header>
 
-<section>
-<h2>The scanner - basics</h2>
-<p>Make sure you gave the app permission to use your camera.</p>
-<p>To scan first go to the scanner tab in the app.</p>
-<p>then point at what you want to scan</p>
-<p>Click start and it will give you info about the object.</p>
-</section>
-
-<section>
-    <h2>The scanner - looking for something specific</h2>
-<p>To look for a specific color or pattern first look up the color or pattern in the gallery.</p>
-<p>Send the color to the scanner.</p>
-<p>start the scanning process again but this time you can scan an area to look for something specific.</p>
-</section>
-
-<section>
-<h2>Additional settings</h2>
-    <p>In the additional settings you can disable speaking when scanning by going to settings, then sound, and then
-        clicking the button for speaking.</p>
+<section class="download">
+    <h2 class="downloadH2">App and camera</h2>
+    <p>You can download our extended guide on how to use the app and camera by clicking the button below!</p>
+    <div>
+        <button class="buttonDownload" aria-label="Download the manual"><a href="media/VisualEyes Manual.pdf"
+                                                                           download>Download</a>
+        </button>
+    </div>
 </section>
 
 <footer>
