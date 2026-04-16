@@ -2,6 +2,10 @@ main {
     background-color: #575757;
 }
 
+body {
+    margin: 0;
+}
+
 .contactDescription {
     font-family: Alphazet;
     font-size: 2.2rem;
@@ -22,8 +26,8 @@ header {
 
 .contact-container {
     max-width: 60rem;
-    margin: 2.5rem auto;
     padding: 1.25rem;
+    margin: 0 auto; /* or 1rem auto */
     background-color: #575757;
     color: #FFFFFF;
 }
@@ -55,6 +59,7 @@ header {
 
 label {
     font-size: 1.5rem;
+    font-family: Alphazet;
     font-weight: bold;
     margin-bottom: 0.3rem;
 }
@@ -106,6 +111,8 @@ input:valid, textarea:valid {
     cursor: pointer;
     transition: 0.2s;
     font-size: 1.5rem;
+    font-family: Alphazet;
+    font-weight: bold;
 }
 
 .submit-button:hover {
