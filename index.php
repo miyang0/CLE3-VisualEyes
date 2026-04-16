@@ -23,7 +23,8 @@
     <header>
 
         <div class="imgDiv">
-            <img src="https://file.garden/aCHSjVU4PCQNDvKI/Placeholder_view_vector.svg.png" alt="Eye">
+            <img src="https://file.garden/aCHSjVU4PCQNDvKI/file2"
+                 alt="Front facing view of glasses with VisualEyes attached">
         </div>
 
         <h1>Product</h1>
@@ -51,7 +52,7 @@
             <p>Lorem ipsum or smth</p>
         </div>
 
-        <img src="https://file.garden/aCHSjVU4PCQNDvKI/Placeholder_view_vector.svg.png" alt="Eye">
+        <img src="https://file.garden/aCHSjVU4PCQNDvKI/file" alt="Sideway view of glasses with VisualEyes attached">
 
 
     </section>
