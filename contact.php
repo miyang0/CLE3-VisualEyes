@@ -72,7 +72,7 @@ if (isset($_POST['submit'])) {
     <header>
         <h1>Contact</h1>
         <p class="contactDescription">Do u have a question, did something go wrong or do u need help with something? We
-            will do our best to help u
+            will do our best to get back to u
             as soon as possible after u fill in this form.</p>
     </header>
 

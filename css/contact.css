@@ -1,3 +1,7 @@
+main {
+    background-color: #575757;
+}
+
 .contactDescription {
     font-family: Alphazet;
     font-size: 2.2rem;
@@ -25,8 +29,10 @@ header {
 }
 
 .form-title {
-    font-size: 1.5rem;
+    font-family: Alphazet;
+    font-size: 2rem;
     font-weight: bold;
+    color: white;
     margin-bottom: 1.25rem;
 }
 
@@ -48,8 +54,9 @@ header {
 }
 
 label {
+    font-size: 1.5rem;
+    font-weight: bold;
     margin-bottom: 0.3rem;
-    font-weight: 500;
 }
 
 input, textarea {
@@ -79,8 +86,7 @@ input:-webkit-autofill {
     -webkit-text-fill-color: black;
 }
 
-input:valid,
-textarea:valid {
+input:valid, textarea:valid {
     background-color: white;
     color: black;
 }
@@ -92,16 +98,17 @@ textarea:valid {
 }
 
 .submit-button {
-    padding: 0.5rem 1rem;
+    padding: 0.5rem 3rem;
     border-radius: 0.4rem;
     border: 0.06rem solid #ccc;
     background-color: #707070;
     color: #FFFFFF;
     cursor: pointer;
     transition: 0.2s;
+    font-size: 1.5rem;
 }
 
-.submit-button:hover, input:hover {
+.submit-button:hover {
     background-color: #f0f0f0;
     color: black;
 }
