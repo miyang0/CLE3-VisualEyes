@@ -1,11 +1,5 @@
 <?php
-
 ?>
-
-<head>
-    <link rel="stylesheet" href="css/style.css">
-    <script src="https://kit.fontawesome.com/2dba62d6df.js" crossorigin="anonymous"></script>
-</head>
 
 <div class="imgTextTogether">
     <img src="https://file.garden/aCHSjVU4PCQNDvKI/aJqDyI2o.webp" alt="VisualEyes logo">
@@ -27,6 +21,7 @@
             <a href="#"><i class="fa-brands fa-youtube"></i></a>
         </div>
     </div>
-
 </div>
+
+<script src="https://kit.fontawesome.com/2dba62d6df.js" crossorigin="anonymous"></script>
 

@@ -2,22 +2,38 @@
     --primary-text-color: black;
     --secondary-text-color: white;
     --tertiary-text-color: #404040;
+
     --primary-color: #415A77;
     --primary-color-2: #778DA9;
+
     --primary-bg-color: white;
     --secondary-bg-color: #E0E1DD;
     --tertiary-bg-color: #575757
 }
 
 .darkmode {
-    --primary-text-color: white;
-    --secondary-text-color: black;
-    --tertiary-text-color: #404040;
-    --primary-color: #415A77;
-    --primary-color-2: #778DA9;
-    --primary-bg-color: black;
-    --secondary-bg-color: #E0E1DD;
-    --tertiary-bg-color: #575757
+    --primary-text-color: #F5F5F5;
+    --secondary-text-color: #F5F5F5;
+    --tertiary-text-color: #B0B0B0;
+
+    --primary-color: #778DA9;
+    --primary-color-2: #404250;
+
+    --primary-bg-color: #393737;
+    --secondary-bg-color: #1E1E1E;
+    --tertiary-bg-color: #2A2A2A;
+}
+
+#theme-switch .dark {
+    display: none;
+}
+
+.darkmode #theme-switch .light {
+    display: none;
+}
+
+.darkmode #theme-switch .dark {
+    display: inline;
 }
 
 * {
@@ -26,6 +42,8 @@
 
 body {
     overflow-x: hidden;
+    background-color: var(--primary-bg-color);
+    color: var(--primary-text-color);
 }
 
 header, section {
@@ -70,7 +88,7 @@ nav img {
     width: 25vw;
 }
 
-.theme-switch image {
+#theme-switch img {
     padding: 0;
 }
 
@@ -87,7 +105,7 @@ header {
 
 }
 
-.description p, .aboutDescription, .goalsText, .reasonsText, .download p {
+.description p, .aboutDescription, .goalsText {
     font-family: Alphazet;
     font-size: 2.2rem;
     color: var(--secondary-text-color);
@@ -98,6 +116,25 @@ header {
     padding: 50px 140px 50px 50px;
 }
 
+.reasonsText, .download p {
+    font-family: Alphazet;
+    font-size: 2.2rem;
+    color: var(--primary-text-color);
+    font-weight: bold;
+    width: 80vw;
+    text-align: center;
+    justify-self: center;
+    padding: 50px 140px 50px 50px;
+}
+
+.buttonDownload {
+    border: var(--primary-text-color) 1.6px solid;
+}
+
+.buttonDownload a {
+    color: var(--primary-text-color);
+}
+
 .aboutDescription {
     font-size: 2.2rem;
     width: 65vw;
@@ -105,10 +142,6 @@ header {
 
 .goalsText {
     width: 85vw;
-}
-
-.reasonsText {
-    color: black;
 }
 
 h1, h2, h3 {
@@ -138,10 +171,6 @@ h1, h2, h3 {
 .downloadH2 {
     font-size: 6rem;
     padding-bottom: 3vh;
-}
-
-.download p {
-    color: black;
 }
 
 .download {
@@ -193,7 +222,6 @@ header div {
     padding-bottom: 5vh;
 }
 
-
 h2 {
     padding-left: 200px;
     padding-top: 100px;
@@ -214,6 +242,7 @@ h2 {
 .reasons {
     background-color: var(--secondary-bg-color);
     padding-top: 7vh;
+    color: var(--primary-text-color);
 }
 
 footer {

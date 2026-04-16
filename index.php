@@ -14,7 +14,6 @@
 </head>
 <body>
 
-
 <nav>
     <?php require_once "blocks/nav.php"; ?>
 </nav>
@@ -62,6 +61,6 @@
 <footer>
     <?php require_once "blocks/footer.php"; ?>
 </footer>
-
+<script src="js/darkmode.js"></script>
 </body>
 </html>
