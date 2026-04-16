@@ -1,19 +1,23 @@
 :root {
-    --darkmode-color: black;
+    --primary-text-color: black;
+    --secondary-text-color: white;
+    --tertiary-text-color: #404040;
     --primary-color: #415A77;
     --primary-color-2: #778DA9;
-    --secondary-color: #4A051C;
     --primary-bg-color: white;
     --secondary-bg-color: #E0E1DD;
+    --tertiary-bg-color: #575757
 }
 
 .darkmode {
-    --darkmode-color: white;
+    --primary-text-color: white;
+    --secondary-text-color: black;
+    --tertiary-text-color: #404040;
     --primary-color: #415A77;
     --primary-color-2: #778DA9;
-    --secondary-color: #4A051C;
-    --primary-bg-color: #3B3B3B;
+    --primary-bg-color: black;
     --secondary-bg-color: #E0E1DD;
+    --tertiary-bg-color: #575757
 }
 
 * {
@@ -21,7 +25,7 @@
 }
 
 header, section {
-    color: var(--darkmode-color);
+    color: var(--primary-text-color);
 }
 
 nav {
@@ -43,7 +47,7 @@ nav {
 nav a {
     font-family: Uwais;
     text-decoration: none;
-    color: var(--darkmode-color);
+    color: var(--primary-text-color);
     font-size: 3em;
 }
 
@@ -75,14 +79,14 @@ header {
 }
 
 .description, .goals, .reasons {
-    background-color: #575757;
+    background-color: var(--tertiary-bg-color);
 
 }
 
 .description p, .aboutDescription, .goalsText, .reasonsText {
     font-family: Alphazet;
     font-size: 2.2rem;
-    color: #ffffff;
+    color: var(--secondary-text-color);
     font-weight: bold;
     width: 80vw;
     text-align: center;
@@ -105,7 +109,7 @@ header {
 
 h1, h2, h3 {
     font-family: Uwais;
-    color: #000000;
+    color: var(--primary-text-color);
     font-size: 8rem;
     letter-spacing: 8px;
     justify-self: center;
@@ -114,13 +118,13 @@ h1, h2, h3 {
 }
 
 .aboutH1 {
-    color: white;
+    color: var(--secondary-text-color);
 
 }
 
 .goalsH2 {
     padding-left: 0;
-    color: white;
+    color: var(--secondary-text-color);
 }
 
 .reasonsH3 {
@@ -162,7 +166,7 @@ h2 {
 .smartCamera p {
     font-family: Alphazet;
     font-size: 2rem;
-    color: #000000;
+    color: var(--primary-text-color);
     font-weight: bold;
     padding-left: 280px;
 }
@@ -170,13 +174,12 @@ h2 {
 .reasons {
     background-color: var(--secondary-bg-color);
     padding-top: 7vh;
-    /*padding-bottom: 3vh;*/
 }
 
 footer {
-    background-color: #778DA9;
+    background-color: var(--primary-color-2);
     height: 30vh;
-    color: #404040;
+    color: var(--tertiary-text-color);
 }
 
 footer img {
@@ -197,11 +200,11 @@ footer a {
     font-family: Uwais;
     font-size: 1.5rem;
     text-decoration: none;
-    color: #404040;
+    color: var(--tertiary-text-color);
 }
 
 footer a:hover {
-    text-decoration: solid underline #404040;
+    text-decoration: solid underline var(--tertiary-text-color);
 }
 
 .imgTextTogether {
