@@ -6,20 +6,29 @@ body {
     margin: 0;
 }
 
+header {
+    background-color: #778DA9;
+    color: black;
+
+    padding: 60px 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
 .contactDescription {
     font-family: Alphazet;
     font-size: 2.2rem;
     color: #ffffff;
     font-weight: bold;
-    width: 80vw;
+    max-width: 900px;
+    width: 90%;
+    padding: 0;
+    margin: 0;
     text-align: center;
-    justify-self: center;
-    padding: 50px 140px 50px 50px;
-}
-
-header {
-    background-color: #778DA9;
-    color: black;
+    line-height: 1.5;
 }
 
 .contact-container {
@@ -136,9 +145,4 @@ input:valid, textarea:valid {
     margin: 1.25rem auto;
     border-radius: 0.4rem;
     width: fit-content;
-}
-
-@font-face {
-    font-family: Alphazet;
-    src: url("https://file.garden/aCHSjVU4PCQNDvKI/Alphazet-Light.ttf");
 }
