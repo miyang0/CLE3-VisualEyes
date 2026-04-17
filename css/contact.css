@@ -1,5 +1,7 @@
 main {
     background-color: var(--tertiary-bg-color);
+    padding-bottom: 0;
+    margin-bottom: 0;
 }
 
 body {
@@ -8,20 +10,23 @@ body {
 
 header {
     background-color: #778DA9;
-    color: black;
-
-    padding: 60px 20px;
     text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 15px;
+    gap: 6px;
+    padding: 50px 20px 35px;
+}
+
+header h1 {
+    color: black;
+    margin: 0;
 }
 
 .contactDescription {
     font-family: Alphazet;
     font-size: 2.2rem;
-    color: #ffffff;
+    color: black;
     font-weight: bold;
     max-width: 900px;
     width: 90%;
@@ -36,7 +41,7 @@ header {
     max-width: 60rem;
     min-width: 300px;
     padding: 1.25rem;
-    margin: 2rem auto;
+    margin: 2rem auto 0;
     background-color: #575757;
     color: #FFFFFF;
 }
