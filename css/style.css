@@ -38,12 +38,18 @@
 
 * {
     margin: 0;
+    box-sizing: border-box;
 }
 
 body {
     overflow-x: hidden;
     background-color: var(--primary-bg-color);
     color: var(--primary-text-color);
+}
+
+main {
+    width: 100%;
+    display: block;
 }
 
 header, section {
@@ -60,10 +66,8 @@ nav {
 
 .navText {
     padding-top: 3vh;
-    justify-self: flex-end;
     display: flex;
     gap: 3vw;
-    margin: 0;
 }
 
 nav a {
@@ -94,54 +98,86 @@ nav img {
 
 header {
     background-color: var(--primary-color-2);
-    /*width: 100vw;*/
-    height: 54vh;
     display: flex;
-    gap: 10vw;
+    align-items: center;
+    justify-content: center;
+    padding: 80px 60px;
+    gap: 80px;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+.aboutH1 {
+    font-size: 8rem;
+    line-height: 0.9;
+    color: var(--secondary-text-color);
+    flex: 1;
+    padding-left: 0;
+}
+
+.aboutDescription {
+    flex: 1.5;
+    font-family: Alphazet;
+    font-size: 2rem;
+    color: var(--secondary-text-color);
+    font-weight: bold;
+    text-align: center;
+    max-width: 900px;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .description, .goals, .reasons {
     background-color: var(--tertiary-bg-color);
-
 }
 
-.description p, .aboutDescription, .goalsText {
+.description p {
     font-family: Alphazet;
     font-size: 2.2rem;
     color: var(--secondary-text-color);
     font-weight: bold;
-    width: 80vw;
+    max-width: 1100px;
+    width: 90%;
+    margin: 0 auto;
     text-align: center;
-    justify-self: center;
-    padding: 50px 140px 50px 50px;
+    padding: 50px 20px;
 }
 
-.reasonsText, .download p {
+.goals,
+.reasons {
+    padding: 80px 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.goalsH2,
+.reasonsH3 {
+    margin-bottom: 30px;
+    padding: 0;
+    text-align: center;
+}
+
+.goalsText,
+.reasonsText {
     font-family: Alphazet;
     font-size: 2.2rem;
-    color: var(--primary-text-color);
     font-weight: bold;
-    width: 80vw;
+    color: var(--secondary-text-color);
+
+    max-width: 1000px;
+    width: 90%;
+
+    padding: 40px;
+
     text-align: center;
-    justify-self: center;
-    padding: 50px 140px 50px 50px;
-}
+    line-height: 1.6;
 
-.buttonDownload {
-    border: var(--primary-text-color) 1.6px solid;
-}
-
-.buttonDownload a {
-    color: var(--primary-text-color);
-}
-
-.aboutDescription {
-    font-size: 2.2rem;
-    width: 65vw;
-}
-
-.goalsText {
-    width: 85vw;
+    background: transparent;
 }
 
 h1, h2, h3 {
@@ -149,18 +185,11 @@ h1, h2, h3 {
     color: var(--primary-text-color);
     font-size: 8rem;
     letter-spacing: 8px;
-    justify-self: center;
-    align-self: center;
-    padding-left: 130px;
-}
-
-.aboutH1 {
-    color: var(--secondary-text-color);
-
+    text-align: center;
+    margin: 0 auto;
 }
 
 .goalsH2 {
-    padding-left: 0;
     color: var(--secondary-text-color);
 }
 
@@ -196,23 +225,12 @@ h1, h2, h3 {
 header img, .smartCamera img {
     width: 26vw;
     height: fit-content;
-    justify-self: flex-start;
     padding: 3vw;
     object-fit: contain;
-
 }
 
 header img {
     padding-top: 0;
-}
-
-.imgDiv {
-    padding-left: 180px;
-    padding-top: 0;
-}
-
-header div {
-    justify-self: flex-end;
 }
 
 .smartCamera {
@@ -220,15 +238,6 @@ header div {
     display: flex;
     gap: 18vw;
     padding-bottom: 5vh;
-}
-
-h2 {
-    padding-left: 200px;
-    padding-top: 100px;
-}
-
-.textSplit {
-    padding-left: 100px;
 }
 
 .smartCamera p {
@@ -242,7 +251,6 @@ h2 {
 .reasons {
     background-color: var(--secondary-bg-color);
     padding-top: 7vh;
-    color: var(--primary-text-color);
 }
 
 footer {
@@ -261,7 +269,7 @@ footer img {
 .footerText {
     padding: 12px;
     display: flex;
-    flex-flow: nowrap column;
+    flex-direction: column;
     gap: 20px;
 }
 
@@ -290,7 +298,7 @@ i {
 
 .socials {
     display: flex;
-    flex-flow: nowrap column;
+    flex-direction: column;
     gap: 20px;
     padding-left: 1000px;
     padding-top: 7px;

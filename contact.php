@@ -60,6 +60,7 @@ if (isset($_POST['submit'])) {
 <head>
     <meta charset="UTF-8">
     <title>VisualEyes</title>
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/contact.css">
 </head>
 <body>
@@ -68,6 +69,7 @@ if (isset($_POST['submit'])) {
 <nav>
     <?php require_once "blocks/nav.php"; ?>
 </nav>
+
 <main>
     <header>
         <h1>Contact</h1>

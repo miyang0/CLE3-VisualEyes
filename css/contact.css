@@ -1,5 +1,5 @@
 main {
-    background-color: #575757;
+    background-color: var(--tertiary-bg-color);
 }
 
 body {
@@ -19,15 +19,15 @@ body {
 
 header {
     background-color: #778DA9;
-    /*    primary color 2*/
     color: black;
-    /*    darkmode color, primary text color*/
 }
 
 .contact-container {
+    width: 100%;
     max-width: 60rem;
+    min-width: 300px;
     padding: 1.25rem;
-    margin: 0 auto; /* or 1rem auto */
+    margin: 2rem auto;
     background-color: #575757;
     color: #FFFFFF;
 }
